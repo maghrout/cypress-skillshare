@@ -1,0 +1,14 @@
+{
+  "name": "cypress-skillshare",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cypress": "cypress open"
+  },
+  "author": "Moj Aghrout",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^3.4.0"
+  }
+}
