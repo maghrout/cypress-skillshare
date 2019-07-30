@@ -17,7 +17,7 @@ describe("My First Example Test", function() {
 });
 
 describe("My First Hillary's Test", function() {
-  it("Visits the Hillary's ite", function() {
-    cy.visit("https://example.cypress.io");
+  it("Visits the Hillarys site", function() {
+    cy.visit("https://www.hillarys.co.uk/arrange-an-appointment/");
   });
 });
