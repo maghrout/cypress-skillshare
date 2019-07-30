@@ -1,6 +1,8 @@
 describe("Hillarys Appointment Page Test", function() {
   it("", function() {
-    cy.visit("https://www.hillarys.co.uk/arrange-an-appointment/");
+    cy.visit(
+      "https://www.dev.hillarys.hblonline.co.uk/arrange-an-appointment/"
+    );
 
     //Step 1
     cy.get('[data-products="Blinds"]').click();
@@ -25,6 +27,8 @@ describe("Hillarys Appointment Page Test", function() {
       .click();
 
     //Step 3
+    //Normally you can only select an option from a dropdown using it's value
+    //This is a nice work around for picking a random number from the dropdown not based on value
     cy.get("#selecteddate1 > option")
       .eq(3)
       .then(element => cy.get("#selecteddate1").select(element.val()));
@@ -39,5 +43,22 @@ describe("Hillarys Appointment Page Test", function() {
       .eq(5)
       .then(element => cy.get("#selecteddate3").select(element.val()));
     cy.get("#selectedtime3").select("09:00 - 12:00");
+
+    cy.get("[data-next-section]")
+      .eq(2)
+      .click();
+
+    //Step 4
+
+    cy.get("#mr").click();
+    cy.get("#firstName").type("Testing");
+    cy.get("#surname").type("Tester");
+    cy.get("#emailAddress").type("apache@codecomputerlove.com");
+    cy.get("#ConfirmEmailAddress").type("apache@codecomputerlove.com");
+    cy.get("#telephone").type("07777777777");
+
+    cy.get("[data-form-submit]")
+      .eq(0)
+      .click();
   });
 });
