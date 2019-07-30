@@ -21,3 +21,13 @@ describe("My First Hillary's Test", function() {
     cy.visit("https://www.hillarys.co.uk/arrange-an-appointment/");
   });
 });
+
+describe("My First Assertion", function() {
+  it("Visit google and searches for something", function() {
+    cy.visit("https://www.codecomputerlove.com/");
+
+    cy.get(".section-header__title")
+      .should("have.text", "We create brilliant digital products and services.")
+      .and("have.html", "We create brilliant digital products and services.");
+  });
+});
