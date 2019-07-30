@@ -1,12 +1,12 @@
 {
   "name": "cypress-skillshare",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A set of acceptance tests against the Hillarys site",
   "scripts": {
     "cypress": "cypress open",
-    "cypress:verify": "cypress verify",
-    "cypress:run": "cypress run"
+    "cypress:all": "cypress run",
+    "cypress:record": "cypress run --record",
+    "cypress:verify": "cypress verify"
   },
   "author": "Moj Aghrout",
   "license": "ISC",

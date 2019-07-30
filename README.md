@@ -30,5 +30,6 @@ and `expect` from Chai.
 
 You can very easily switch one of the `true` to a `false` to make it fail and make your first failing test.
 
-#Resources
+# Resources
+
 [Kitchen Sink](https://example.cypress.io/)
