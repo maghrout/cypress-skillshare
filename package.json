@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "cypress": "cypress open",
-    "cypress:verify": "cypress verify"
-
+    "cypress:verify": "cypress verify",
+    "cypress:run": "cypress run"
   },
   "author": "Moj Aghrout",
   "license": "ISC",
