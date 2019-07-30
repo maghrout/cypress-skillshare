@@ -1,7 +1,5 @@
 # Cypress
 
-# Steps:
-
 ## Setup -
 
 run `npm install`
@@ -15,6 +13,8 @@ All tests sit in the `cypress/integration` folder which is where we will make th
 Create a file such as `[insert test name here].js` an example can be `application_form.js` .
 
 Running the command `npm run cypress` will open up the Cypress GUI which will list all the tests in your `cypress/integration` folder, clicking one of those should open up the test runner
+
+You can also run the tests without the GUI and get a command line response, this will generate screenshots for failing tests so you can debug and also generate videos of running tests in the browser.
 
 ## First passing/failing test:
 
@@ -55,6 +55,7 @@ Once we have that we can create an assertion, in order to do this we use `.shoul
 `.should()` and `.and()` both have multiple overloads, the first can be something like `.should("be.empty")` almost written in plain text, the second is `.should("have.text", "Hello, World!")`. There are two more overloads I have never had to use but you can read more about them below.
 
 [Should](https://docs.cypress.io/api/commands/should.html)
+
 [And](https://docs.cypress.io/api/commands/and.html)
 
     describe("My First Assertion", function() {
@@ -70,4 +71,5 @@ Once we have that we can create an assertion, in order to do this we use `.shoul
 # Resources
 
 The kitchen sink is a live example site created by Cypress to test the capabilities of Cypress
+
 [Kitchen Sink](https://example.cypress.io/)
