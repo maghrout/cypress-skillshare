@@ -60,5 +60,11 @@ describe("Hillarys Appointment Page Test", function() {
     cy.get("[data-form-submit]")
       .eq(0)
       .click();
+
+    //Confirmation
+    cy.url().should(
+      "eq",
+      "https://www.dev.hillarys.hblonline.co.uk/arrange-an-appointment/confirmation/"
+    );
   });
 });
