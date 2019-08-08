@@ -1,3 +1,7 @@
 {
-    "baseUrl": "https://www.dev.hillarys.hblonline.co.uk"
+    "baseUrl": "https://www.dev.hillarys.hblonline.co.uk",
+    "projectId": "random",
+    "env": {
+        "ieUrl": "https://www.dev.hillarys.ie.hblonline.co.uk"
+    }
 }
